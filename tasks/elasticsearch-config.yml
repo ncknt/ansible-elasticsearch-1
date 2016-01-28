@@ -19,11 +19,11 @@
 
 - set_fact: pid_dir={{ es_pid_dir }}/{{inventory_hostname}}-{{ es_instance_name }}
 
-- set_fact: data_dir={{ es_data_dir }}/{{inventory_hostname}}-{{ es_instance_name }}
+- set_fact: data_dir={{ es_data_dir }}
 
-- set_fact: log_dir={{ es_log_dir }}/{{inventory_hostname}}-{{ es_instance_name }}
+- set_fact: log_dir={{ es_log_dir }}
 
-- set_fact: work_dir={{ es_work_dir }}/{{inventory_hostname}}-{{ es_instance_name }}
+- set_fact: work_dir={{ es_work_dir }}
 
 #Create required directories
 - name: Create PID Directory
